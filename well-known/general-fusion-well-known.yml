@@ -1,0 +1,63 @@
+generated: '2026-08-04'
+method: probed
+source: live GET probes of https://generalfusion.com/.well-known/*
+host: https://generalfusion.com
+found: 0
+note: No /.well-known/ discovery documents are published. Every probe returned 404;
+  the site is a WordPress marketing site and answers unknown paths with an HTML 404
+  page, so no pointer is wired for this artifact. Recorded as negative evidence for
+  future re-runs. General Fusion operates no API host, developer portal, or docs host
+  to probe (api., developer., docs., trust., status. subdomains do not resolve).
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+contract_discovery:
+  note: STEP 0b hunt-harder probes. No machine-readable API contract of any kind is
+    published. Only surface returning 200 with structured data is the WordPress REST
+    discovery index, which exposes CMS/admin plugin namespaces (iThemes Security, Yoast,
+    Redirection, FileBird, FacetWP, WP Engine) and NOT a product API — the WordPress
+    core wp/v2 namespace is disabled. It is deliberately NOT catalogued as a General
+    Fusion API.
+  probes:
+  - url: https://generalfusion.com/openapi.json
+    status: 404
+  - url: https://generalfusion.com/openapi.yaml
+    status: 404
+  - url: https://generalfusion.com/swagger.json
+    status: 404
+  - url: https://generalfusion.com/api-docs
+    status: 404
+  - url: https://generalfusion.com/api
+    status: 404
+  - url: https://generalfusion.com/docs
+    status: 404
+  - url: https://generalfusion.com/llms.txt
+    status: 200
+    saved: llms/general-fusion-llms.txt
+  - url: https://generalfusion.com/wp-json/
+    status: 200
+    kind: wordpress-rest-discovery
+    namespaces: 11
+    routes: 211
+    product_api: false
+  hosts_that_do_not_resolve:
+  - api.generalfusion.com
+  - developer.generalfusion.com
+  - docs.generalfusion.com
+  - status.generalfusion.com
+  - trust.generalfusion.com
+  graphql: none found
+  mcp: none found
+  a2a_agent_card: none found

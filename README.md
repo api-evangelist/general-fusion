@@ -42,5 +42,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-General Fusion is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+General Fusion is a Canadian fusion energy company founded in 2002 by physicist Dr. Michel Laberge and
+headquartered in Richmond, British Columbia. It is developing Magnetized Target Fusion (MTF), combining
+plasma formation, mechanical compression by a liquid metal liner, and practical heat capture for
+electricity generation. It operates LM26, which it describes as the world's largest and most powerful
+operational fusion plasma injector. In July 2026 it completed a business combination with Spring Valley
+Acquisition Corp. III and became the first publicly listed fusion energy company, trading on Nasdaq
+under the ticker GFUZ.
+
+**No public API surface.** General Fusion is an energy hardware and research company. It publishes no
+developer portal, no API documentation, no SDKs, and no machine-readable API contract — no OpenAPI,
+GraphQL, AsyncAPI, MCP server, or A2A agent card was found on any of its hosts. The only machine-readable
+public surfaces are a Yoast-generated `llms.txt` and the WordPress REST discovery index behind the
+marketing site (CMS/admin plugin namespaces only — not a product API, and not catalogued as one).
+The probe evidence is recorded in [`well-known/general-fusion-well-known.yml`](well-known/general-fusion-well-known.yml).
+
+- https://generalfusion.com/
+- https://investors.generalfusion.com/
+- https://github.com/GeneralFusion
 - https://www.hiive.com/securities/general-fusion-stock

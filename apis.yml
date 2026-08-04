@@ -1,17 +1,37 @@
 aid: general-fusion
 name: General Fusion
-description: 'General Fusion is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'General Fusion is a Canadian fusion energy company founded in 2002 by
+  physicist Dr. Michel Laberge and headquartered in Richmond, British Columbia, in the
+  Vancouver area. It is developing Magnetized Target Fusion (MTF), an approach that
+  combines plasma formation, mechanical compression by a liquid metal liner, and practical
+  heat capture for electricity generation. The company operates LM26, which it describes
+  as the world''s largest and most powerful operational fusion plasma injector, and
+  reports 24 plasma prototypes, more than 200,000 plasma experiments, 35+ peer-reviewed
+  papers, and roughly 210 issued and pending patents. In July 2026 General Fusion completed
+  a business combination with Spring Valley Acquisition Corp. III and became the first
+  publicly listed fusion energy company, trading on Nasdaq under the ticker GFUZ. It
+  is an energy hardware and research company rather than a software or API provider:
+  it publishes no public developer portal, API documentation, SDKs, or machine-readable
+  API contracts. Its only machine-readable public surfaces are a Yoast-generated llms.txt
+  and the WordPress REST discovery index behind its marketing site.'
 url: https://raw.githubusercontent.com/api-evangelist/general-fusion/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+image: https://generalfusion.com/wp-content/uploads/2026/06/2026-06-03_luisamunera_add-neon-blueprint-lines-to-_machine_v3-only-to-the-main-machine-in-the-cente_2-1-1024x572.png
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Energy
+- Fusion Energy
+- Clean Energy
+- Nuclear Fusion
+- Deep Tech
+- Research
+- Canada
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/general-fusion-domain-security.yml
 - type: Website
+  url: https://generalfusion.com/
+- type: About
+  url: https://generalfusion.com/about/
+- type: Blog
+  url: https://generalfusion.com/news-insights/
+- type: BlogRSS
+  url: https://generalfusion.com/feed/
+- type: Support
+  url: https://generalfusion.com/about/contact-us/
+- type: GitHubOrganization
+  url: https://github.com/GeneralFusion
+- type: PrivacyPolicy
+  url: https://generalfusion.com/privacy-policy/
+- type: TermsOfService
+  url: https://generalfusion.com/terms-and-conditions/
+- type: CookiePolicy
+  url: https://generalfusion.com/cookie-policy/
+- type: InvestorRelations
+  url: https://investors.generalfusion.com/
+- type: Careers
+  url: https://generalfusion.com/careers/
+- type: Research
+  url: https://generalfusion.com/our-fusion-technology/research-library/
+- type: Partners
+  url: https://generalfusion.com/path-to-commercialization/partners-early-adopters-facilities/
+- type: LLMsTxt
+  url: llms/general-fusion-llms.txt
+- type: SecondaryMarket
+  name: Hiive secondary-market listing
   url: https://www.hiive.com/securities/general-fusion-stock
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

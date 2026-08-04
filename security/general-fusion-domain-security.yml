@@ -1,0 +1,18 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of the General Fusion web host
+note: Third-party hosts referenced from apis.yml (the Hiive secondary-market listing)
+  were probed but are excluded here; this artifact records only hosts General Fusion
+  operates.
+hosts:
+- host: generalfusion.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 04:44:18 2026 GMT
+  hsts: null
+domains:
+- domain: generalfusion.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
