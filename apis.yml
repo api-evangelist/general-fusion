@@ -20,7 +20,7 @@ x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
 image: https://generalfusion.com/wp-content/uploads/2026/06/2026-06-03_luisamunera_add-neon-blueprint-lines-to-_machine_v3-only-to-the-main-machine-in-the-cente_2-1-1024x572.png
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
