@@ -19,6 +19,17 @@ x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://generalfusion.com/wp-content/uploads/2026/06/2026-06-03_luisamunera_add-neon-blueprint-lines-to-_machine_v3-only-to-the-main-machine-in-the-cente_2-1-1024x572.png
 specificationVersion: '0.23'
 created: '2026-08-04'
