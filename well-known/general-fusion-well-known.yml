@@ -3,32 +3,15 @@ method: probed
 source: live GET probes of https://generalfusion.com/.well-known/*
 host: https://generalfusion.com
 found: 0
-note: No /.well-known/ discovery documents are published. Every probe returned 404;
-  the site is a WordPress marketing site and answers unknown paths with an HTML 404
-  page, so no pointer is wired for this artifact. Recorded as negative evidence for
-  future re-runs. General Fusion operates no API host, developer portal, or docs host
-  to probe (api., developer., docs., trust., status. subdomains do not resolve).
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
+note: No /.well-known/ discovery documents are published. Every probe returned 404; the site is a WordPress
+  marketing site and answers unknown paths with an HTML 404 page, so no pointer is wired for this artifact.
+  Recorded as negative evidence for future re-runs. General Fusion operates no API host, developer portal,
+  or docs host to probe (api., developer., docs., trust., status. subdomains do not resolve).
 contract_discovery:
-  note: STEP 0b hunt-harder probes. No machine-readable API contract of any kind is
-    published. Only surface returning 200 with structured data is the WordPress REST
-    discovery index, which exposes CMS/admin plugin namespaces (iThemes Security, Yoast,
-    Redirection, FileBird, FacetWP, WP Engine) and NOT a product API — the WordPress
-    core wp/v2 namespace is disabled. It is deliberately NOT catalogued as a General
+  note: STEP 0b hunt-harder probes. No machine-readable API contract of any kind is published. Only surface
+    returning 200 with structured data is the WordPress REST discovery index, which exposes CMS/admin
+    plugin namespaces (iThemes Security, Yoast, Redirection, FileBird, FacetWP, WP Engine) and NOT a product
+    API — the WordPress core wp/v2 namespace is disabled. It is deliberately NOT catalogued as a General
     Fusion API.
   probes:
   - url: https://generalfusion.com/openapi.json
@@ -61,3 +44,25 @@ contract_discovery:
   graphql: none found
   mcp: none found
   a2a_agent_card: none found
+hosts:
+- host: https://generalfusion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
