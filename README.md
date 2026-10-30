@@ -64,22 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-General Fusion is a Canadian fusion energy company founded in 2002 by physicist Dr. Michel Laberge and
-headquartered in Richmond, British Columbia. It is developing Magnetized Target Fusion (MTF), combining
-plasma formation, mechanical compression by a liquid metal liner, and practical heat capture for
-electricity generation. It operates LM26, which it describes as the world's largest and most powerful
-operational fusion plasma injector. In July 2026 it completed a business combination with Spring Valley
-Acquisition Corp. III and became the first publicly listed fusion energy company, trading on Nasdaq
-under the ticker GFUZ.
+General Fusion is a Canadian fusion energy company founded in 2002 by physicist Dr. Michel Laberge and headquartered in Richmond, British Columbia, in the Vancouver area. It is developing Magnetized Target Fusion (MTF), an approach that combines plasma formation, mechanical compression by a liquid metal liner, and practical heat capture for electricity generation. The company operates LM26, which it describes as the world's largest and most powerful operational fusion plasma injector, and reports 24 plasma prototypes, more than 200,000 plasma experiments, 35+ peer-reviewed papers, and roughly 210 issued and pending patents. In July 2026 General Fusion completed a business combination with Spring Valley Acquisition Corp. III and became the first publicly listed fusion energy company, trading on Nasdaq under the ticker GFUZ. It is an energy hardware and research company rather than a software or API provider: it publishes no public developer portal, API documentation, SDKs, or machine-readable API contracts. Its only machine-readable public surfaces are a Yoast-generated llms.txt and the WordPress REST discovery index behind its marketing site.
 
-**No public API surface.** General Fusion is an energy hardware and research company. It publishes no
-developer portal, no API documentation, no SDKs, and no machine-readable API contract — no OpenAPI,
-GraphQL, AsyncAPI, MCP server, or A2A agent card was found on any of its hosts. The only machine-readable
-public surfaces are a Yoast-generated `llms.txt` and the WordPress REST discovery index behind the
-marketing site (CMS/admin plugin namespaces only — not a product API, and not catalogued as one).
-The probe evidence is recorded in [`well-known/general-fusion-well-known.yml`](well-known/general-fusion-well-known.yml).
+**Areas:** Company · Energy · Fusion Energy · Clean Energy · Nuclear Fusion · Deep Tech · Research · Canada
 
-- https://generalfusion.com/
-- https://investors.generalfusion.com/
-- https://github.com/GeneralFusion
-- https://www.hiive.com/securities/general-fusion-stock
+## General Fusion on APIs.io
+
+Everything profiled for General Fusion is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/general-fusion/](https://apis.io/providers/general-fusion/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [General Fusion Domain Security](https://apis.io/security/general-fusion/general-fusion-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://generalfusion.com/)
+- [Support](https://generalfusion.com/about/contact-us/)
+- [Blog](https://generalfusion.com/news-insights/)
+- [Terms of service](https://generalfusion.com/terms-and-conditions/)
+- [Privacy policy](https://generalfusion.com/privacy-policy/)
+- [GitHub](https://github.com/GeneralFusion)
+
+## API Evangelist rating
+
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/general-fusion/](https://apis.io/providers/general-fusion/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for General Fusion: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/general-fusion/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
